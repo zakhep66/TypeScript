@@ -1,0 +1,34 @@
+
+<div class="container">
+
+  <div class="row">
+  <input type="text" class="form-control col-md-4" style="margin-right: 10px;" placeholder="Отфильтровать по группе"
+  [(ngModel)]=StudentFilterGroup.group>
+<br>
+<input type="text" class="form-control col-md-4" placeholder="Отфильтровать по подготовке"
+[(ngModel)]=StudentFilterGroup.stud>
+<br>
+</div>
+<br>
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">id</th>
+        <th scope="col"> <button type="button" class="btn" (click)="useSorting()">⇅</button> Фамилия И.О.</th>
+        <th scope="col">Группа</th>
+        <th scope="col">Направление подготовки</th>
+        <th scope="col">Действие</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let student of students | filterBy:StudentFilterGroup">
+        <th scope="row">{{student.id}}</th>
+        <td>{{student.surname}} &nbsp; {{ student.name[0]}}.{{student.middlename[0]}}.</td>
+        <td>{{student.group}}</td>
+        <td>{{student.stud}}</td>
+        <td><button type="button" class="btn btn-primary" [routerLink]="['/editstud', student.id]">Edit</button> <button type="button" class="btn btn-warning" style="margin-left: 10px;" (click)="onDelete(student.id)">Del</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

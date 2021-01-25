@@ -1,0 +1,48 @@
+{
+  "posts": [
+    {
+      "surname": "Суровицкий",
+      "name": "Михаил",
+      "middlename": "Дмитриевич",
+      "phone": "899999999",
+      "email": "v@ya.ru",
+      "birth": "11-90-2000",
+      "group": "191-321",
+      "stud": "007",
+      "id": 13
+    },
+    {
+      "surname": "Жмышенко",
+      "name": "Валерий",
+      "middlename": "Альбертович",
+      "phone": "77777777777",
+      "email": "keyPOP228@ya.org",
+      "birth": "31.03.2001",
+      "group": "191-321",
+      "stud": "007",
+      "id": 15
+    },
+    {
+      "surname": "Я",
+      "name": "Хочу",
+      "middlename": "Питсы",
+      "phone": "ням",
+      "email": "ням",
+      "birth": "ням",
+      "group": "ням",
+      "stud": "доел",
+      "id": 16
+    },
+    {
+      "surname": "Руднев",
+      "name": "Никита",
+      "middlename": "Андреевич",
+      "phone": "есть",
+      "email": "тоже_есть",
+      "birth": "он вечен",
+      "group": "191-362",
+      "stud": "java",
+      "id": 17
+    }
+  ]
+}

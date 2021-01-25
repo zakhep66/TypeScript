@@ -4,3 +4,8 @@
     margin: 0;
     border: 0px;
 }
+
+.body{
+    background: url(https://good-surf.ru/forum/urok/css/fon/images/big.jpg);
+    background-size: cover;
+}

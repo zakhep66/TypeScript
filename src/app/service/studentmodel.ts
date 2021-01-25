@@ -10,7 +10,7 @@ export class Student{
     public stud:string;
 
     constructor(surname:string, name:string,middlename: string,
-        phone: string,email: string,birth: string,group: string,stud:string, id?:number){
+        phone: string, email: string, birth: string, group: string, stud:string, id?:number){
             this.id=id;
             this.surname=surname;
             this.name = name;

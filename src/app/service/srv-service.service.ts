@@ -1,6 +1,8 @@
 import {Injectable} from '@angular/core';
 import {Student} from '../service/studentmodel';
 import {HttpClient} from '@angular/common/http';
+// import * as a from "../../../db.json";
+import posts from '../../../db.json';
 
 
 @Injectable({
@@ -21,7 +23,7 @@ export class SrvService {
   }
 
   async getStudents() {
-    this.students = [];
+    this.students = posts.posts
     
    const data = await this.http
      .get(this.link)
@@ -35,6 +37,7 @@ export class SrvService {
     
   }
 
+
   async addStudent(student: Student) {
     this.studentsadd = [];
     const dataadd = await this.http
@@ -46,7 +49,6 @@ export class SrvService {
      delete dataadd[index].updatedAt;
      this.studentsadd.push(dataadd[index]);
    }
-
 
 
     return this.http.post(this.link, student, this.options).toPromise();

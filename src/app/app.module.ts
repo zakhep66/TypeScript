@@ -18,6 +18,7 @@ import {FilterPipeModule} from 'ngx-filter-pipe'
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,3 +41,5 @@ import {FilterPipeModule} from 'ngx-filter-pipe'
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
 export class AppModule { }
+
+
